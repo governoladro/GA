@@ -1,0 +1,39 @@
+
+
+
+(:om-lib 
+ (:version 1.5)
+ (:doc "Genetic Algorithm library")
+ (:author "Andrea Taroppi")
+ 
+ (:source-files 
+  "sources/crom-generation"
+  "sources/gen-operators"
+  "sources/gen-utilities"
+  "sources/fitness-functions"
+  "sources/utilities"
+  "sources/selection"
+ )
+ 
+ (:symbols
+  (:packages 
+   (:package 
+    (:name "generation")
+    (:functions binary-creation phrase-generator))
+   (:package 
+    (:name "gen-operators")
+    (:functions binary-mutation numbers-mutation pitch-mutation rhythmic-mutation rhythmic-mutation-add retroGa inverted re-ro transposition crossover))
+   (:package 
+    (:name "fitness-functions")
+    (:functions differences distances repeated pitch-variety pitch-range contour-direction contour-stability movement-by-step no-returns climax-strength syncopation sound-silence-ratio rhythmic-variety rhythmic-range duration-control random-fit))
+   (:package
+    (:name "utilities")
+    (:functions dur-not-union separator scale1 summ vertical-control binToDec))
+   (:package
+    (:name "selection")
+    (:functions evolution evolution-stationary evolution-turneament))
+   ))
+ 
+ 
+ 
+ 
